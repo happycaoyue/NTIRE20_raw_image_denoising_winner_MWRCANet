@@ -22,13 +22,13 @@ Dn_sRGB_MWRCANet
 
 Compared with other denoising networks to design the complex network structure, we mainly use distillating knowledge and NAS (Neural Architecture Search technology) to improve the denoising performance. 
 Our method included four-step training procedures. First, we take advantage of both MWCNN[1] and ResNet[4] to propose mwresnet (multi-level wavelet- resnet) as Original Network. 
-The Discrete Wavelet Transformation (DWT) Inverse Discrete Wavelet Transformation (IWT) are realized by convolution operation and deconvolution operation with xed convolution kernel parameters, respectively. 
+The Discrete Wavelet Transformation (DWT) Inverse Discrete Wavelet Transformation (IWT) are realized by convolution operation and deconvolution operation with fixed convolution kernel parameters, respectively. 
 Second, we are based on Original Network to design the Siamese Network by use of NAS technology. 
-By using evolutionary algorithm search for the ecient basic block with the search space(block number, type and channel number) to replace the residual block in mwresnet, we get the Siamese Network which is named mwrcanet (multi-level wavelet-residual channel attention network).
+By using evolutionary algorithm search for the efficient basic block with the search space(block number, type and channel number) to replace the residual block in mwresnet, we get the Siamese Network which is named mwrcanet (multi-level wavelet-residual channel attention network).
 The Dense Block in densenet[3] and Residual Channel Attention Block (RCAB) in RCAN[2] are considered in the search area about block type. 
 Through the training of mwresnet and mwrcanet, we get denoising results of validation set and test set.
 The averaged denoising results (between original network and siamese network) and original noisy images pair became the new training data in distillating knowledge stage. 
-In the third training step, we netune those two networks. 
+In the third training step, we finetune those two networks. 
 In the fourth training step, we finetune siamese network through the use of the noisy images and denoised results of both original network and siamese network. We only use the Siamese Network to get the final denoised results. 
 Those two networks can complement each other to improve denoising performance in distillating
 knowledge stage.
