@@ -18,6 +18,16 @@ Dn_RAW_MWRCANet
 
 Dn_sRGB_MWRCANet
 
+## Network
+
+<img src="img/mwresnet.png" alt="drawing" width="600px"/>
+
+Original Network : mwresnet (multi-level wavelet-resnet)
+
+<img src="img/mwrcanet.png" alt="drawing" width="600px"/>
+
+Siamese Network : mwrcanet (multi-level wavelet-residual channel attention network)
+
 ## General method description
 
 Compared with other denoising networks to design the complex network structure, we mainly use distillating knowledge and NAS (Neural Architecture Search technology) to improve the denoising performance. 
