@@ -152,4 +152,4 @@ Yunchao Zhang, zhangyunchao1@huawei.com, Huawei, China
 
 ## Contact
 
-Please send email to cscaoyue@gmail.com or cscaoyue@hit.edu.com
+Please send email to cscaoyue@gmail.com or cscaoyue@hit.edu.cn
